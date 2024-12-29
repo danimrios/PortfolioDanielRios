@@ -32,7 +32,21 @@
             <article>
                 <h1 id="sobremi">Sobre mi</h1>
 
+              
+                <script>
+                    // Obtener los formularios
+                    const Cartaprecentacion = document.getElementById('form1');
+                    const Cartaprecentacion2 = document.getElementById('form2');
                 
+                    // Calcular y ajustar la altura del segundo formulario
+                    function ajustarAltura() {
+                      const alturaForm1 = form1.offsetHeight; // Altura del primer formulario
+                      form2.style.height = `${alturaForm1 / 4}px`; // Ajusta el segundo formulario
+                    }
+                
+                    // Ejecutar al cargar la página
+                    ajustarAltura();
+                    </script>
                 <form id="Cartaprecentacion">
                     
                 <img id="IMGPresentacion" src="jpg/FDanielRios.jpg" alt="Imagen de Presentación"/>                 
