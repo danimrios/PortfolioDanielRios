@@ -1,15 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" href="css/styles.css">
+    
+        <title></title>
 </head>
 <body>
+    <header>
+       <a id="nav" href="#sobremi">Sobre mi</a>
+       <a id="nav"href="#STACK">Stack</a>
+        <a id="nav"href="#Proyectosh1">Proyectos</a>
+        <a id="nav4"href="#contactame">Contactame</a>
+        
+    </header>
+ 
 
-  
+    <main>
+        <aside id="Isquierdo">
+
+        </aside>
+   <article id="titulo">
+                       <p id="TItulo">Buenas, soy</p>
+                <h1>
+                    Rios Daniel Martin
+                    
+                </h1>
+                <p id="TItulo2">Tecnico Universitario en Programacion</p>
+   </article>
+            <article>
+                <h1 id="sobremi">Sobre mi</h1>
+
+                
+                <form id="Cartaprecentacion">
+                    
+                <img id="IMGPresentacion" src="jpg/FDanielRios.jpg" alt="Imagen de Presentación"/>                 
+                  
+                    <p>
+                        Bienvenido a mi portafolio. Soy Daniel  Rios,graduado el reciente mes de octubre. tengo 24 años.
+                        
+                        Aquí encontrarás una muestra de mis proyectos, habilidades y experiencia del desarrollo web.
+                    </p>
+                
+
+
+                </form>
+              <form id="Cartaprecentacion2">
+          <div class="Redes">
+                <img id="IMGnav0" src="jpg/descargaCV.jpeg" alt="Imagen de Presentación"/>                    
+                <img id="IMGnav2" src="jpg/linkedin.png" alt="Imagen de Presentación" onclick="window.open('https://www.linkedin.com/in/daniel-martin-rios', '_blank')" />                 
+                <img id="IMGnav" src="jpg/Gith.jpeg" onclick="window.open('https://github.com/danimrios', '_blank')" alt="Imagen de Presentación"/>                 
+
+          </div>
+
+              </form>
+
+
+
+                <h1 id="STACK">STACK</h1>
+                <form id="STAck">
+                    
+                    <div id="Fron">
+                        <p id="titulotec">  Frontend</p>
+                        <img id="IMgfrontend" src="jpg/frontend.jpg" /> 
+                        <p>HTML  CSS </p>
+                    </div>
+
+                   <div id="back">
+                       <p id="titulotec">  Backend</p>
+                       <img id="IMgbackend" src="jpg/backend.jpg" />
+                       <p>C# C++ Java SSMS MySQL </p>
+                   </div>
+                   <div id="herra"> 
+                       <p id="titulotec">  Herramientas</p>
+                       <img id="IMgHerramienta" src="jpg/Herramienta.jpg" /> 
+                       <p>Visual Studio CodeBlocks Eclipce  Github </p>
+                       
+                   </div>
+                   <div id="herra"> 
+                       <p id="titulotec">  Estudiando</p>
+                       <img id="IMgEstudiando" src="jpg/estudiando.jpg" /> 
+                       <p>Python, node.js</p>
+                   </div>  
+                    
+                </form>
+
+                <h1 id="Proyectosh1">PROYECTOS</h1>
+                
+                
+                <form id="FORMproyectos">
+                    <div id="Proyectos">
+                          <h2 id="Clinica">Clinica</h2>
+                        <p id="textoProyectos">
+                    Proyecto de una aplicación web de gestión de una clínica.
+                    Esta cuenta con una parte de administrador y médico para 
+                    la gestión de los turnos y atenciones médicas hacia los clientes
+                
+                    Proyecto desarrollado en tres capas utilizando las tecnologias 
+                     ASP.NET, HTML, CSS, C#, Base de Datos en SQL
+
+                        </p>
+                     
+                    </div>
+                    <div id="ProyectosIMG"> 
+                    <img id="IMgProyecto" src="jpg/clinicaUTN.jpg" /> 
+                    <img id="IMgProyecto" src="jpg/clinicaUTN2.jpg" /> 
+                
+                   
+                        </div>
+                </form>
+
+                <form id="FormLinks">
+                 <div class="Redes">
+                    <img id="LinkProyecto" src="jpg/link.jpg" alt="Imagen de Presentación"/>                    
+                    <img id="LinkGhitProyecto" src="jpg/Gith.jpeg" onclick="window.open('https://github.com/danimrios/TPINT_GRUPO_1_PR3', '_blank')" alt="Imagen de Presentación"/>                 
+
+                        </div> 
+
+                </form>
+
+                
+
+                <form id="FORMproyectos2">
+                    
+                    <div id="Proyectos2">
+                        <h2 id="Banco">Home Banking</h2>
+                    <p id="textoProyectos2">
+                Proyecto aplicación web Home Banking(ficticio) el cual 
+                cuenta con una parte administradora y otra parte cliente 
+                un cliente puede realizar transacciones regulares de un banco,solicitar prestamos, observar sus datos personales y de sus cuentas
+                Mientras que un administrador es capas de dar de alta clientes, cuentas, aprobar o rechazar prestamos, y puede ver los reportes de las actividades de los clientes 
+                                    
+                Preoyecto desarrollado en tres capas con las tecnologias: HTML,CSS,JAVA,JAVASCRIPT, Gestor de BD MYSQL                    </p>
+                     
+                    </div>
+                    <div id="ProyectosIMG2"> 
+
+                    <img id="IMgProyecto2" src="jpg/clinicaUTN.jpg" /> 
+                     <img id="IMgProyecto2" src="jpg/clinicaUTN2.jpg" /> 
+                
+                   
+                        </div>
+                </form>
+                <form id="FormLinks2">
+                 <div class="Redes">
+                    <img id="LinkProyecto" src="jpg/link.jpg"  alt="Imagen de Presentación"/>                    
+                    <img id="LinkGhitProyecto" src="jpg/Gith.jpeg" onclick="window.open('https://github.com/danimrios/TPINT_GRUPO_15_LAB4', '_blank')" alt="Imagen de Presentación"/>                 
+
+                        </div> 
+
+                </form>
+
+                <h1 id="contactame">Contactame</h1>
+                <script>
+        function copyToClipboard(text) {
+          
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            const message = document.getElementById('message');
+            message.innerText = "¡Texto copiado al portapapeles!";
+        }
+    </script>
+                
+                <form id="contactam">
+                              <div class="Contacto">
+                <img id="IMGgmail" src="jpg/gmail.jpg" alt="Imagen de Presentación" onclick="copyToClipboard('danielmartinmrios@gmail.com')"/>                    
+<div class="hover-text">Copiar Direccion Gmail</div>
+<p>danielmartinmrios@gmail.com</p>
+
+
+          </div>
+                                                  <div class="Contacto">
+                <img id="IMGlinke" src="jpg/linkedin.png" src="jpg/Gith.jpeg" onclick="window.open('https://www.linkedin.com/in/daniel-martin-rios', '_blank')" alt="Imagen de Presentación""/>                    
+<p>Daniel Martin Rios</p>
+
+          </div>
+                                                  <div class="Contacto">
+                <img id="IMGwassp" src="jpg/wassp.png" alt="Imagen de Presentación" onclick="window.open('https://wa.me/+541158397896', '_blank')"/>                    
+<p>+54 9 1158397896</p>
+
+          </div>
+                    
+                </form> 
+
+            </article>
+        <aside id="Derecho">
+
+
+
+
+        </aside>
+
+  </main>
+   <footer>
+      <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Daniel Rios</p>
+   </footer>
 </body>
 </html>

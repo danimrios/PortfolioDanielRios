@@ -1,12 +1,725 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
 
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-body);
+  color: #E4E4E4;
+  line-height: 1.6;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
+:root {
+  --color-article: blueviolet;
+  --color-form: black;
+  --color-body: #121212;
+  --color-h1: #523E90;
+  --color-h2: white;
 }
+
+article {
+  margin: 6% auto 0 auto; /* Centra el elemento horizontalmente */
+  display: block;
+  padding: 0px; /* Espaciado interno */
+  width: 70%;
+  background-color: var(--color-article);
+  ;
+  /*background-color: #0D1B2A;*/ /* Fondo (puedes cambiarlo según tu paleta) */
+  color: #E4E4E4; /* Color de texto */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  margin-top: 0;
+  padding: 1px;
+}
+
+  article#titulo {
+      margin-top: 8%;
+      background-color: #121212;
+      padding-top: 0;
+      box-shadow: none;
+  }
+
+
+header {
+  width: 100%; /* Ocupa el 100% del ancho */
+  height: 8vh; /* Ocupa el 8% de la altura de la ventana */
+  background-color: #1E1E1E; /* Gris antracita, visible pero discreto */
+  color: #E4E4E4; /* Texto claro para contraste */
+  display: flex; /* Permite alinear contenido dentro */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: flex-end; /* Espacia elementos al máximo */
+  padding: 0 20px; /* Espaciado lateral */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil para separar del fondo */
+  position: fixed; /* Permite que el header esté siempre visible */
+  top: 0; /* Fija el header en la parte superior */
+  z-index: 10; /* Se asegura de estar por encima de otros elementos */
+}
+
+a#nav {
+  color: #E4E4E4; /* Texto claro */
+  text-decoration: none; /* Sin subrayado */
+  margin-right: 4%; /* Espaciado entre enlaces */
+  font-size: 1rem; /* Tamaño de texto */
+  transition: color 0.3s ease; /* Animación para hover */
+}
+
+a#nav4 {
+  color: #E4E4E4; /* Texto claro */
+  text-decoration: none; /* Sin subrayado */
+  margin-right: 7%; /* Espaciado entre enlaces */
+  font-size: 1rem; /* Tamaño de texto */
+  transition: color 0.3s ease; /* Animación para hover */
+}
+
+/* Efecto hover en los enlaces */
+.a:hover {
+  color: #FFD700; /* Cambia a dorado al pasar el cursor */
+}
+
+nav {
+  width: 100%; /* Ocupa todo el ancho */
+  height: 12vh; /* Ocupa el 12% de la altura de la ventana */
+  background-color: #181818; /* Apenas más oscuro que el header */
+  color: #E4E4E4; /* Texto claro para contraste */
+  display: flex; /* Para alinear elementos dentro del nav */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 0 20px; /* Espaciado lateral */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más marcada que el header */
+}
+
+footer {
+  width: 100%; /* Ocupa todo el ancho */
+  height: 8vh; /* Ocupa el 8% de la altura de la ventana */
+  background-color: #1E1E1E; /* Mismo color que el header */
+  color: #E4E4E4; /* Texto claro para contraste */
+  display: flex; /* Para alinear contenido dentro */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 0 20px; /* Espaciado interno opcional */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil para destacar */
+  position: relative; /* Permite colocarlo al final del flujo de la página */
+  z-index: 5; /* Asegura que se muestre por encima de elementos secundarios */
+}
+
+/*carta de presentacion 
+
+*/
+#Cartaprecentacion {
+  display: flex; /* Alinea la imagen y el texto horizontalmente */
+  flex-wrap: nowrap; /* Evita que los elementos se apilen */
+  align-items: center; /* Alineación vertical centrada */
+  gap: 20px; /* Espaciado entre la imagen y el texto */
+  width: 80%; /* Ancho del formulario */
+  margin: 20px auto; /* Centrado horizontal */
+  padding: 20px; /* Espaciado interno */
+  background-color: var(--color-form); /* Fondo oscuro */
+  color: #E4E4E4; /* Texto claro */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 0px;
+}
+
+#Cartaprecentacion2 {
+  display: flex; /* Alinea la imagen y el texto horizontalmente */
+  flex-wrap: nowrap; /* Evita que los elementos se apilen */
+  align-items: center; /* Alineación vertical centrada */
+  gap: 20px; /* Espaciado entre la imagen y el texto */
+  width: 80%; /* Ancho del formulario */
+  margin: 20px auto; /* Centrado horizontal */
+  padding: 20px; /* Espaciado interno */
+  background-color: var(--color-form); /* Fondo oscuro */
+  color: #E4E4E4; /* Texto claro */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 0px;
+}
+
+#FORMproyectos {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--color-form);
+  color: #E4E4E4;
+  margin-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#FormLinks {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--color-form);
+  color: #E4E4E4;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 0px;
+}
+
+#FORMproyectos2 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--color-form);
+  color: #E4E4E4;
+  margin-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#FormLinks2 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--color-form);
+  color: #E4E4E4;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 0px;
+}
+/* Estilo para la imagen */
+/* Estilo para el texto */
+#IMGPresentacion {
+  width: 150px; /* Ancho de la imagen */
+  height: 150px; /* Alto de la imagen */
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover; /* Recorta la imagen para encajar correctamente */
+  flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra en la imagen */
+}
+
+#IMGnav {
+  width: auto; /* Permite que el ancho se ajuste automáticamente */
+  height: auto; /* Permite que el alto se ajuste automáticamente */
+  max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
+  max-height: 100%; /* Evita que la imagen sea más alta que su contenedor */
+  border-radius: 55%; /* Hace la imagen circular */
+  object-fit: cover; /* Recorta la imagen para encajar correctamente */
+  flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra en la imagen */
+  margin-inline-end: auto; /* Deja un espacio del 5% desde el borde izquierdo */
+  margin-top: 3%; /* Deja un espacio del 3% desde el borde superior */
+  margin-bottom: 3%; /* Espacio entre imágenes de 3% */
+  float: left; /* Alinea la imagen a la izquierda */
+  cursor: pointer;
+}
+
+  #IMGnav:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Sombra más intensa al pasar el mouse */
+      transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  }
+
+#IMGnav2 {
+  width: auto; /* Permite que el ancho se ajuste automáticamente */
+  height: auto; /* Permite que el alto se ajuste automáticamente */
+  max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
+  max-height: 100%; /* Evita que la imagen sea más alta que su contenedor */
+  border-radius: 55%; /* Hace la imagen circular */
+  object-fit: cover; /* Recorta la imagen para encajar correctamente */
+  flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra en la imagen */
+
+  margin-top: 3%; /* Deja un espacio del 3% desde el borde superior */
+  margin-bottom: 3%; /* Espacio entre imágenes de 3% */
+  float: left; /* Alinea la imagen a la izquierda */
+  cursor: pointer;
+}
+
+  #IMGnav2:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Sombra más intensa al pasar el mouse */
+      transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  }
+
+#IMGnav0 {
+  width: auto; /* Permite que el ancho se ajuste automáticamente */
+  height: auto; /* Permite que el alto se ajuste automáticamente */
+  max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
+  max-height: 100%; /* Evita que la imagen sea más alta que su contenedor */
+  border-radius: 55%; /* Hace la imagen circular */
+  object-fit: cover; /* Recorta la imagen para encajar correctamente */
+  flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra en la imagen */
+  margin-left: 23%; /* Deja un espacio del 5% desde el borde izquierdo */
+  margin-top: 3%; /* Deja un espacio del 3% desde el borde superior */
+  margin-bottom: 3%; /* Espacio entre imágenes de 3% */
+  float: left; /* Alinea la imagen a la izquierda */
+  cursor: pointer;
+}
+
+  #IMGnav0:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Sombra más intensa al pasar el mouse */
+      transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  }
+
+#IMGnav3 {
+  width: auto; /* Permite que el ancho se ajuste automáticamente */
+  height: auto; /* Permite que el alto se ajuste automáticamente */
+  max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
+  max-height: 100%; /* Evita que la imagen sea más alta que su contenedor */
+  border-radius: 55%; /* Hace la imagen circular */
+  object-fit: cover; /* Recorta la imagen para encajar correctamente */
+  flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra en la imagen */
+  margin-left: 23%; /* Deja un espacio del 5% desde el borde izquierdo */
+  margin-top: 3%; /* Deja un espacio del 3% desde el borde superior */
+  margin-bottom: 3%; /* Espacio entre imágenes de 3% */
+  float: left; /* Alinea la imagen a la izquierda */
+  cursor: pointer;
+}
+
+  #IMGnav3:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+      transform: scale(1.1);
+  }
+
+#IMGwassp {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 55%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-left: 30%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  float: left;
+  cursor: pointer;
+}
+
+  #IMGwassp:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+      transform: scale(1.1);
+  }
+
+#IMGlinke {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 55%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-left: 30%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  float: left;
+  cursor: pointer;
+}
+
+  #IMGlinke:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+      transform: scale(1.1);
+  }
+
+#IMGgmail {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 55%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-left: 30%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  float: left;
+  cursor: pointer;
+}
+
+  #IMGgmail:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Sombra más intensa al pasar el mouse */
+      transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  }
+
+#contactam .hover-text {
+  position: absolute;
+  bottom: 10px; /* Ajusta la posición del texto dentro del contenedor */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  opacity: 0; /* Ocultar texto inicialmente */
+  transition: opacity 0.3s ease; /* Suavizar la aparición */
+  text-align: center;
+  pointer-events: none;
+}
+
+/* Mostrar texto al pasar el cursor sobre la imagen */
+#contactam img:hover + .hover-text {
+  opacity: 1; /* Mostrar texto */
+}
+
+#LinkProyecto {
+  width: auto; /* Permite que el ancho se ajuste automáticamente */
+  height: auto; /* Permite que el alto se ajuste automáticamente */
+  max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
+  max-height: 100%; /* Evita que la imagen sea más alta que su contenedor */
+  border-radius: 55%; /* Hace la imagen circular */
+  object-fit: cover; /* Recorta la imagen para encajar correctamente */
+  flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra en la imagen */
+  margin-left: 23%; /* Deja un espacio del 5% desde el borde izquierdo */
+  margin-top: 3%; /* Deja un espacio del 3% desde el borde superior */
+  margin-bottom: 3%; /* Espacio entre imágenes de 3% */
+  float: left; /* Alinea la imagen a la izquierda */
+  cursor: pointer;
+}
+
+  #LinkProyecto:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Sombra más intensa al pasar el mouse */
+      transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  }
+
+#LinkGhitProyecto {
+  width: auto; /* Permite que el ancho se ajuste automáticamente */
+  height: auto; /* Permite que el alto se ajuste automáticamente */
+  max-width: 100%; /* Evita que la imagen sea más grande que su contenedor */
+  max-height: 100%; /* Evita que la imagen sea más alta que su contenedor */
+  border-radius: 55%; /* Hace la imagen circular */
+  object-fit: cover; /* Recorta la imagen para encajar correctamente */
+  flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra en la imagen */
+  margin-inline-end: auto; /* Deja un espacio del 5% desde el borde izquierdo */
+  margin-top: 3%; /* Deja un espacio del 3% desde el borde superior */
+  margin-bottom: 3%; /* Espacio entre imágenes de 3% */
+  float: left; /* Alinea la imagen a la izquierda */
+  cursor: pointer;
+}
+
+  #LinkGhitProyecto:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Sombra más intensa al pasar el mouse */
+      transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  }
+
+.Redes {
+  width: 100%; /* Ocupa el 100% del ancho */
+  height: 8vh; /* Ocupa el 8% de la altura de la ventana */
+
+  color: #E4E4E4; /* Texto claro para contraste */
+  display: flex; /* Permite alinear contenido dentro */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: space-between; /* Espacia elementos al máximo */
+  padding: 0 20px;
+  margin-top: auto;
+}
+
+.Contacto {
+  width: 100%;
+  height: 8vh; /* Ocupa el 8% de la altura de la ventana */
+
+  color: #E4E4E4; /* Texto claro para contraste */
+  display: flex; /* Permite alinear contenido dentro */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: space-between; /* Espacia elementos al máximo */
+  margin-top: auto;
+}
+
+
+p {
+  display: flex;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  margin-inline-end: auto;
+}
+
+
+@media (max-width: 768px) {
+  form#CartaPresentacion {
+      flex-direction: column; /* Coloca la imagen y el texto en columnas */
+      text-align: center; /* Centra el contenido */
+  }
+
+      form#CartaPresentacion img {
+          margin: 0 auto; /* Centra la imagen */
+      }
+}
+/* titulo */
+h1 {
+  font-size: 50px; /* Ajusta el tamaño de la letra aquí */
+  color: var(--color-h1); /* Color del texto */
+  font-family: 'Arial', sans-serif; /* Tipo de letra */
+  text-align: center; /* Centra horizontalmente */
+  /* Posiciona el elemento de manera absoluta */
+  top: 50%; /* Ubica el elemento en el 50% de la pantalla verticalmente */
+
+  le left: 50%; /* Ubica el elemento en el 50% de la pantalla horizontalmente */
+
+  tra transform: translate(-50%, -50%); /* Ajusta para que el centro del texto quede en el centro exacto */
+  margin: 0; /* Elimina márgenes por defecto */
+}
+
+  h1#sobremi {
+      color: #3C3A77;
+      font-size: x-large;
+      text-align: center;
+      text-decoration: underline; /* Aplica un subrayado sobre el texto */
+
+      text-decoration-color: #f4f1e1;
+      text-decoration-thickness: 1px;
+  }
+
+  h1#STACK {
+      padding-top: 40px;
+      font-size: x-large;
+      text-align: center;
+      text-decoration: underline; /* Aplica un subrayado sobre el texto */
+
+      text-decoration-color: #f4f1e1;
+      text-decoration-thickness: 1px;
+  }
+
+  h1#Proyectosh1 {
+      padding-top: 60px;
+      font-size: x-large;
+      text-align: center;
+      text-decoration: underline; /* Aplica un subrayado sobre el texto */
+
+      text-decoration-color: #f4f1e1;
+      text-decoration-thickness: 1px;
+  }
+
+  h1#Proyectosh12 {
+      padding-top: 60px;
+      font-size: x-large;
+      text-align: center;
+      text-decoration: underline; /* Aplica un subrayado sobre el texto */
+
+      text-decoration-color: #f4f1e1;
+      text-decoration-thickness: 1px;
+  }
+
+  h1#contactame {
+      padding-top: 60px;
+      font-size: x-large;
+      text-align: center;
+      text-decoration: underline; /* Aplica un subrayado sobre el texto */
+
+      text-decoration-color: #f4f1e1;
+      text-decoration-thickness: 1px;
+  }
+
+h2 {
+  font-size: 30px; /* Ajusta el tamaño de la letra aquí */
+  color: var(--color-h2); /* Color del texto */
+  font-family: 'Arial', sans-serif; /* Tipo de letra */
+  text-align: center; /* Centra horizontalmente */
+  /* Posiciona el elemento de manera absoluta */
+  top: 50%; /* Ubica el elemento en el 50% de la pantalla verticalmente */
+
+  le left: 50%; /* Ubica el elemento en el 50% de la pantalla horizontalmente */
+
+  tra transform: translate(-50%, -50%); /* Ajusta para que el centro del texto quede en el centro exacto */
+  margin: 0; /* Elimina márgenes por defecto */
+}
+
+  h2#Banco {
+      /*   padding-top: 60px;*/
+
+      font-size: large;
+      text-align: center;
+      /*margin-left:8%;*/
+      text-decoration: underline;
+      text-decoration-color: #f4f1e1;
+      text-decoration-thickness: 1px;
+  }
+
+  h2#Clinica {
+      font-size: large;
+      text-align: center;
+      /*margin-left:8%;*/
+      text-decoration: underline;
+      text-decoration-color: #f4f1e1;
+      text-decoration-thickness: 1px;
+  }
+
+#TItulo {
+  font-size: 38px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  display: block;
+}
+
+#TItulo2 {
+  font-size: 38px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  display: block;
+  margin-bottom: 23%;
+}
+
+#STAck {
+  display: flex; /* Alinea la imagen y el texto horizontalmente */
+  flex-wrap: nowrap; /* Evita que los elementos se apilen */
+
+  gap: 20px; /* Espaciado entre la imagen y el texto */
+  width: 80%; /* Ancho del formulario */
+  margin: 20px auto; /* Centrado horizontal */
+  padding: 20px; /* Espaciado interno */
+  background-color: var(--color-form); /* Fondo oscuro */
+  color: #E4E4E4; /* Texto claro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+#contactam {
+  display: block; /* Alinea la imagen y el texto horizontalmente */
+  flex-wrap: nowrap; /* Evita que los elementos se apilen */
+  gap: 20px; /* Espaciado entre la imagen y el texto */
+  width: 80%; /* Ancho del formulario */
+  margin: 20px auto; /* Centrado horizontal */
+  padding: 20px; /* Espaciado interno */
+  background-color: var(--color-form); /* Fondo oscuro */
+  color: #E4E4E4; /* Texto claro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  position: relative; /* Necesario para posicionar el texto */
+}
+
+#IMgfrontend {
+  width: 100%;
+  height: 60%;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+#IMgbackend {
+  width: 100%;
+  height: 60%;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+#IMgProyecto {
+  width: 100%;
+  height: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+  #IMgProyecto:active {
+      transform: scale(2.5); /* Agranda la imagen */
+  }
+
+#IMgProyecto2 {
+  width: 100%;
+  height: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+  #IMgProyecto2:active {
+      transform: scale(2.5); /* Agranda la imagen */
+  }
+
+#Fron {
+  width: 30%;
+  height: 100%;
+}
+
+#back {
+  width: 30%;
+  height: 100%;
+}
+
+#herra {
+  width: 30%;
+  height: 100%;
+}
+
+div#Proyectos {
+  width: 50%;
+  height: 100%;
+}
+
+div#ProyectosIMG {
+  width: 50%;
+  height: 100%;
+}
+
+div#Proyectos2 {
+  display: block;
+  width: 50%;
+  height: 100%;
+}
+
+div#ProyectosIMG2 {
+  width: 50%;
+  height: 100%;
+}
+
+#IMgHerramienta {
+  width: 100%;
+  height: 60%;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+#IMgEstudiando {
+  width: 100%;
+  height: 60%;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+IMgProyecto {
+  width: 100%;
+  height: 60%;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+IMgProyecto2 {
+  width: 100%;
+  height: 60%;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+p#titulotec {
+  background-color: slategrey;
+  margin: unset;
+  display: block;
+  text-align: center;
+}
+
