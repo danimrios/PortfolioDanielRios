@@ -30,23 +30,31 @@
                 <p id="TItulo2">Tecnico Universitario en Programacion</p>
    </article>
             <article>
+                <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                        // Selecciona el formulario y todos los divs con la clase 'myDiv'
+                        const form = document.getElementById('Cartaprecentacion');
+                        const divs = document.querySelectorAll('.Redes');
+
+                        // Obtén las dimensiones del formulario
+                    
+                        const formHeight = form.offsetHeight;
+
+                        // Itera sobre cada div y ajusta su tamaño
+                        divs.forEach(div => {
+                           
+                            const newDivHeight = formHeight * 0.18; // 40% de la altura del formulario
+
+                            
+                            div.style.height = `${newDivHeight}px`;
+                        });
+                        });
+                </script>
+
                 <h1 id="sobremi">Sobre mi</h1>
 
               
-                <script>
-                    // Obtener los formularios
-                    const Cartaprecentacion = document.getElementById('form1');
-                    const Cartaprecentacion2 = document.getElementById('form2');
-                
-                    // Calcular y ajustar la altura del segundo formulario
-                    function ajustarAltura() {
-                      const alturaForm1 = form1.offsetHeight; // Altura del primer formulario
-                      form2.style.height = `${alturaForm1 / 4}px`; // Ajusta el segundo formulario
-                    }
-                
-                    // Ejecutar al cargar la página
-                    ajustarAltura();
-                    </script>
+              
                 <form id="Cartaprecentacion">
                     
                 <img id="IMGPresentacion" src="jpg/FDanielRios.jpg" alt="Imagen de Presentación"/>                 
@@ -78,10 +86,11 @@
                   </a>  
 
           </div>
+                  
 
               </form>
 
-
+              
 
                 <h1 id="STACK">STACK</h1>
                 <form id="STAck">
