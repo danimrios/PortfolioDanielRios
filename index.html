@@ -35,7 +35,8 @@
                         // Selecciona el formulario y todos los divs con la clase 'myDiv'
                         const form = document.getElementById('Cartaprecentacion');
                         const divs = document.querySelectorAll('.Redes');
-
+                    
+                        const divs2 = document.querySelectorAll('.Contacto');
                         // Obtén las dimensiones del formulario
                     
                         const formHeight = form.offsetHeight;
@@ -48,6 +49,14 @@
                             
                             div.style.height = `${newDivHeight}px`;
                         });
+                        divs2.forEach(divs2 => {
+                           
+                           const newDivHeight = formHeight * 0.18; // 40% de la altura del formulario
+
+                           
+                           divs2.style.height = `${newDivHeight}px`;
+                       });
+
                         });
                 </script>
 
@@ -81,7 +90,7 @@
                 <img id="IMGnav0" src="jpg/linkedin.png" alt="Imagen de Presentación" onclick="window.open('https://www.linkedin.com/in/daniel-martin-rios', '_blank')" />                 
                <img id="IMGnav2" src="jpg/Gith.jpeg" onclick="window.open('https://github.com/danimrios', '_blank')" alt="Imagen de Presentación"/>                 
 
-              <a class="Redesa" href="archivos/documento.pdf" download="documento.pdf">
+              <a class="Redes" id="cv" href="archivos/documento.pdf" download="documento.pdf">
                 <img id="IMGnav" src="jpg/descargaCV.jpeg" alt="Imagen de Presentación"/>
                   </a>  
 
