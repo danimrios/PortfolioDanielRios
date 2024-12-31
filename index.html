@@ -35,28 +35,25 @@
                         // Selecciona el formulario y todos los divs con la clase 'myDiv'
                         const form = document.getElementById('Cartaprecentacion');
                         const divs = document.querySelectorAll('.Redes');
-                    
+                        const header = document.querySelector('header');
+                        const footer =document.querySelector('foo');
                         const divs2 = document.querySelectorAll('.Contacto');
                         // Obtén las dimensiones del formulario
                     
                         const formHeight = form.offsetHeight;
-
+                        const newDivHeight = formHeight * 0.15;
                         // Itera sobre cada div y ajusta su tamaño
                         divs.forEach(div => {
-                           
-                            const newDivHeight = formHeight * 0.18; // 40% de la altura del formulario
 
-                            
                             div.style.height = `${newDivHeight}px`;
                         });
                         divs2.forEach(divs2 => {
-                           
-                           const newDivHeight = formHeight * 0.18; // 40% de la altura del formulario
 
-                           
                            divs2.style.height = `${newDivHeight}px`;
                        });
-
+                        
+                       header.style.height = `${formWidth}px`;
+                       footer.style.height = `${formWidth}px`;
                         });
                 </script>
 

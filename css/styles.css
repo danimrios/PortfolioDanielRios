@@ -40,7 +40,7 @@ article {
 
 header {
   width: 100%; /* Ocupa el 100% del ancho */
-  height: 8vh; /* Ocupa el 8% de la altura de la ventana */
+
   background-color: #1E1E1E; /* Gris antracita, visible pero discreto */
   color: #E4E4E4; /* Texto claro para contraste */
   display: flex; /* Permite alinear contenido dentro */
@@ -88,7 +88,7 @@ nav {
 
 footer {
   width: 100%; /* Ocupa todo el ancho */
-  height: 8vh; /* Ocupa el 8% de la altura de la ventana */
+
   background-color: #1E1E1E; /* Mismo color que el header */
   color: #E4E4E4; /* Texto claro para contraste */
   display: flex; /* Para alinear contenido dentro */
