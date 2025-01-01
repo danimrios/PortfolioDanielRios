@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-       <a id="nav" href="#sobremi">Sobre mi</a>
+       <a id="nav" href="#sobremi">Sobre mí</a>
        <a id="nav"href="#STACK">Stack</a>
         <a id="nav"href="#Proyectosh1">Proyectos</a>
         <a id="nav4"href="#contactame">Contactame</a>
@@ -24,25 +24,25 @@
    <article id="titulo">
                        <p id="TItulo">Buenas, soy</p>
                 <h1>
-                    Rios Daniel Martin
+                     Daniel Martin Rios
                     
                 </h1>
-                <p id="TItulo2">Tecnico Universitario en Programacion</p>
+                <p id="TItulo2">Técnico Universitario en Programación</p>
    </article>
             <article>
                 <script>
                         document.addEventListener("DOMContentLoaded", () => {
-                        // Selecciona el formulario y todos los divs con la clase 'myDiv'
+                        
                         const form = document.getElementById('Cartaprecentacion');
                         const divs = document.querySelectorAll('.Redes');
                         const header = document.querySelector('header');
                         const footer =document.querySelector('foo');
                         const divs2 = document.querySelectorAll('.Contacto');
-                        // Obtén las dimensiones del formulario
+                        
                     
                         const formHeight = form.offsetHeight;
                         const newDivHeight = formHeight * 0.15;
-                        // Itera sobre cada div y ajusta su tamaño
+                       
                         divs.forEach(div => {
 
                             div.style.height = `${newDivHeight}px`;
@@ -51,13 +51,14 @@
 
                            divs2.style.height = `${newDivHeight}px`;
                        });
-                        
-                       header.style.height = `${formWidth}px`;
                        footer.style.height = `${formWidth}px`;
+                       formWidth=(formWidth*2);
+                       header.style.height = `${formWidth}px`;
+                       
                         });
                 </script>
 
-                <h1 id="sobremi">Sobre mi</h1>
+                <h1 id="sobremi">SOBRE MÍ</h1>
 
               
               
@@ -105,18 +106,18 @@
                     <div id="Fron">
                         <p id="titulotec">  Frontend</p>
                         <img id="IMgfrontend" src="jpg/frontend.jpg" /> 
-                        <p id="sta">HTML  CSS </p>
+                        <p id="sta">HTML, CSS </p>
                     </div>
 
                    <div id="back">
                        <p id="titulotec">  Backend</p>
                        <img id="IMgbackend" src="jpg/backend.jpg" />
-                       <p id="sta">C# C++ Java SSMS MySQL </p>
+                       <p id="sta">C#, C++, Java, SSMS, MySQL </p>
                    </div>
                    <div id="herra"> 
                        <p id="titulotec">  Herramientas</p>
                        <img id="IMgHerramienta" src="jpg/herramienta.jpg" /> 
-                       <p id="sta">Visual Studio CodeBlocks Eclipce  Github </p>
+                       <p id="sta">Visual Studio, CodeBlocks, Eclipce, Github </p>
                        
                    </div>
                    <div id="herra"> 
@@ -132,7 +133,7 @@
                 
                 <form id="FORMproyectos">
                     <div id="Proyectos">
-                          <h2 id="Clinica">Clinica</h2>
+                          <h2 id="Clinica">Clínica</h2>
                         <p id="textoProyectos">
                     Proyecto sobre una aplicación web de gestión para una clínica.
                     El mismo cuenta con una parte de un administrador y un médico para 
@@ -164,7 +165,13 @@
                 
 
                 <form id="FORMproyectos2">
+                    <div id="ProyectosIMG2"> 
+
+                        <img id="IMgProyecto2" src="jpg/bancoUtn.jpeg" /> 
+                         <img id="IMgProyecto2" src="jpg/bancoUtn2.jpeg" /> 
                     
+                       
+                            </div>
                     <div id="Proyectos2">
                         <h2 id="Banco">Home Banking</h2>
                     <p id="textoProyectos2">
@@ -176,13 +183,7 @@
                 Preoyecto desarrollado en tres capas con las tecnologías: HTML,CSS,JAVA,JAVASCRIPT, Gestor de BD MYSQL                    </p>
                      
                     </div>
-                    <div id="ProyectosIMG2"> 
-
-                    <img id="IMgProyecto2" src="jpg/bancoUtn.jpeg" /> 
-                     <img id="IMgProyecto2" src="jpg/bancoUtn2.jpeg" /> 
-                
                    
-                        </div>
                 </form>
                 <form id="FormLinks2">
                  <div class="Redes">
@@ -197,7 +198,7 @@
               <form id="FORMproyectos3">
                     
                     <div id="Proyectos3">
-                        <h2 id="CINE">SERVICIO SQL CINE</h2>
+                        <h2 id="CINE">Servicio SQL Cine</h2>
                     <p id="textoProyectos3">
                      El proyecto consiste en la creación de una base 
                     de datos relacional para un cine. Esta base de datos está diseñada para gestionar 
@@ -236,7 +237,7 @@
 
                 </form>
 
-                <h1 id="contactame">Contactame</h1>
+                <h1 id="contactame">CONTÁCTAME</h1>
                 <script>
         function copyToClipboard(text) {
           
