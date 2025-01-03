@@ -44,7 +44,7 @@ article {
 header {
   width: 100%; /* Ocupa el 100% del ancho */
 
-  background-color: #1E1E1E; /* Gris antracita, visible pero discreto */
+  background-color: var(--color-form); /* Gris antracita, visible pero discreto */
   color: var(--color-text); /* Texto claro para contraste */
   display: flex; /* Permite alinear contenido dentro */
   align-items: center; /* Centra verticalmente el contenido */
