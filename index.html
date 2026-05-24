@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Portfolio de Daniel Martín Ríos, Técnico Universitario en Programación"/>
+  <meta name="description" content="Portfolio de Daniel Martín Ríos, desarrollador full-stack"/>
   <link rel="stylesheet" href="css/styles.css">
   <title>Daniel Ríos - Portfolio</title>
 </head>
@@ -14,7 +14,7 @@
     <nav class="nav-menu">
       <a class="nav-link" href="#sobremi">Sobre mí</a>
       <a class="nav-link" href="#STACK">Stack</a>
-      <a class="nav-link" href="#Proyectosh1">Proyectos</a>
+      <a class="nav-link" href="#produccion">Proyectos</a>
       <a class="nav-link nav-link--cta" href="#contactame">Contáctame</a>
     </nav>
   </header>
@@ -26,7 +26,7 @@
       <div class="hero-content">
         <p class="hero-label">Buenas, soy</p>
         <h1>Daniel Martin Rios</h1>
-        <p class="hero-sub">Técnico Universitario en Programación</p>
+        <p class="hero-sub">Desarrollador Full-Stack</p>
         <div class="hero-socials">
           <a class="hero-social-btn" href="https://www.linkedin.com/in/daniel-martin-rios"
              target="_blank" rel="noopener noreferrer">
@@ -87,47 +87,213 @@
           <div class="stack-card">
             <span class="stack-label">Frontend</span>
             <img src="jpg/frontend.jpg" alt="Frontend"/>
-            <p class="stack-tech">HTML, CSS</p>
+            <p class="stack-tech">Next.js · React · TypeScript · Tailwind CSS · HTML · CSS · JavaScript</p>
           </div>
           <div class="stack-card">
             <span class="stack-label">Backend</span>
             <img src="jpg/backend.jpg" alt="Backend"/>
-            <p class="stack-tech">C#, C++, Java, SSMS, MySQL, node.js, Nest.js</p>
+            <p class="stack-tech">Node.js · Supabase · SQL</p>
           </div>
           <div class="stack-card">
             <span class="stack-label">Herramientas</span>
             <img src="jpg/herramienta.jpg" alt="Herramientas"/>
-            <p class="stack-tech">VS Code, CodeBlocks, Eclipse, Docker, Insomnia, GitHub</p>
+            <p class="stack-tech">VS Code · Git / GitHub · Vercel · Docker</p>
           </div>
           <div class="stack-card">
-            <span class="stack-label">Estudiando</span>
+            <span class="stack-label">Aprendiendo</span>
             <img src="jpg/estudiando.jpg" alt="Estudiando"/>
-            <p class="stack-tech">Microservicios</p>
+            <p class="stack-tech">Arquitectura escalable full-stack</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROYECTOS -->
-    <section class="sec" id="Proyectosh1">
+    <!-- PROYECTOS EN PRODUCCIÓN -->
+    <section class="sec" id="produccion">
       <div class="container">
-        <h2 class="sec-title">PROYECTOS</h2>
+        <h2 class="sec-title">PROYECTOS EN PRODUCCIÓN</h2>
+        <div class="proyectos-list">
+
+          <div class="proyecto-card reveal-left">
+            <div class="proyecto-body">
+              <span class="proyecto-badge proyecto-badge--desarrollo">● En desarrollo — 8 sprints</span>
+              <h3 class="proyecto-nombre">Forza Gestión</h3>
+              <div class="stack-tags">
+                <span class="stack-tag">Next.js 14</span>
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">Supabase</span>
+                <span class="stack-tag">Tailwind CSS</span>
+              </div>
+              <p class="proyecto-desc">
+                Sistema de gestión interno full-stack para Forza Constructora. Módulos de obras, stock,
+                compras, RRHH, finanzas y reportes. Autenticación granular con roles y permisos,
+                manejo de datos en tiempo real y optimización de consultas para alta concurrencia.
+              </p>
+              <div class="proyecto-actions">
+                <span class="btn-internal">&#128274; Proyecto interno</span>
+              </div>
+            </div>
+            <div class="proyecto-imgs">
+              <div class="img-placeholder">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+                  <path d="M21 15l-5-5L5 21"/>
+                </svg>
+                <span>Screenshots próximamente</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyecto-card proyecto-card--reverse reveal-right">
+            <div class="proyecto-body">
+              <span class="proyecto-badge proyecto-badge--produccion">● En producción</span>
+              <h3 class="proyecto-nombre">Constructora Forza</h3>
+              <div class="stack-tags">
+                <span class="stack-tag">Next.js</span>
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">Tailwind CSS</span>
+                <span class="stack-tag">Vercel</span>
+              </div>
+              <p class="proyecto-desc">
+                Sitio institucional de Forza Constructora, desde diseño hasta deployment en Vercel.
+                Configuración DNS, integración de Analytics y Google Workspace.
+              </p>
+              <div class="proyecto-actions">
+                <a class="btn-live" href="https://constructoraforza.com.ar"
+                   target="_blank" rel="noopener noreferrer">&#8599; Ver sitio</a>
+              </div>
+            </div>
+            <div class="proyecto-imgs">
+              <div class="img-placeholder">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+                  <path d="M21 15l-5-5L5 21"/>
+                </svg>
+                <span>Screenshots próximamente</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyecto-card reveal-left">
+            <div class="proyecto-body">
+              <span class="proyecto-badge proyecto-badge--desarrollo">● Fase 3 en desarrollo</span>
+              <h3 class="proyecto-nombre">Unbex — Gym Website</h3>
+              <div class="stack-tags">
+                <span class="stack-tag">Next.js 15</span>
+                <span class="stack-tag">React 19</span>
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">Supabase</span>
+                <span class="stack-tag">Tailwind CSS</span>
+              </div>
+              <p class="proyecto-desc">
+                Migración de sitio estático a Next.js 15. Administración dinámica de contenido
+                (planes, precios, horarios, disciplinas) vía Supabase. En desarrollo: panel admin
+                para edición de contenido sin intervención técnica.
+              </p>
+              <div class="proyecto-actions">
+                <span class="btn-internal">&#128679; En progreso</span>
+              </div>
+            </div>
+            <div class="proyecto-imgs">
+              <div class="img-placeholder">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+                  <path d="M21 15l-5-5L5 21"/>
+                </svg>
+                <span>Screenshots próximamente</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyecto-card proyecto-card--reverse reveal-right">
+            <div class="proyecto-body">
+              <span class="proyecto-badge proyecto-badge--completado">&#10003; Completado</span>
+              <h3 class="proyecto-nombre">DMG Media — Landing Page</h3>
+              <div class="stack-tags">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">CSS</span>
+                <span class="stack-tag">JavaScript</span>
+              </div>
+              <p class="proyecto-desc">
+                Landing page de perfil profesional para Matías Lemme (performance marketing).
+                Diseño vintage-meets-modern con paleta editorial (cream, ink, gold, rust).
+                Tipografía: Playfair Display, Bebas Neue, DM Sans.
+              </p>
+              <div class="proyecto-actions">
+                <span class="btn-internal">&#128230; Deliverable privado</span>
+              </div>
+            </div>
+            <div class="proyecto-imgs">
+              <div class="img-placeholder">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+                  <path d="M21 15l-5-5L5 21"/>
+                </svg>
+                <span>Screenshots próximamente</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyecto-card reveal-left">
+            <div class="proyecto-body">
+              <span class="proyecto-badge proyecto-badge--desarrollo">● En desarrollo</span>
+              <h3 class="proyecto-nombre">Tatosh Dev — Personal Brand</h3>
+              <div class="stack-tags">
+                <span class="stack-tag">Next.js</span>
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">Vercel</span>
+                <span class="stack-tag">Meta Ads</span>
+              </div>
+              <p class="proyecto-desc">
+                Marca personal de servicios de desarrollo web. Sitio institucional con presencia
+                en Instagram y campañas activas en Meta Ads.
+              </p>
+              <div class="proyecto-actions">
+                <a class="btn-live" href="https://tatosh-dev.com.ar"
+                   target="_blank" rel="noopener noreferrer">&#8599; Ver sitio</a>
+              </div>
+            </div>
+            <div class="proyecto-imgs">
+              <div class="img-placeholder">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+                  <path d="M21 15l-5-5L5 21"/>
+                </svg>
+                <span>Screenshots próximamente</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS UNIVERSITARIOS -->
+    <section class="sec sec--alt" id="Proyectosh1">
+      <div class="container">
+        <h2 class="sec-title">PROYECTOS UNIVERSITARIOS</h2>
         <div class="proyectos-list">
 
           <div class="proyecto-card reveal-left">
             <div class="proyecto-body">
               <h3 class="proyecto-nombre">Shop-Nest</h3>
+              <div class="stack-tags">
+                <span class="stack-tag">Nest.js</span>
+                <span class="stack-tag">PostgreSQL</span>
+                <span class="stack-tag">Docker</span>
+                <span class="stack-tag">TypeScript</span>
+              </div>
               <p class="proyecto-desc">
-                Desarrollé un modelo de tienda en Nest.js, implementando módulos de autenticación,
-                autorización y gestión de roles, con generación y asignación de tokens de acceso.
-                Incluye manejo de transacciones, seeds, decoradores nativos del framework y controladores
-                de errores personalizados. Los productos soportan creación, consulta y edición.
-                Base de datos PostgreSQL desplegada con Docker.
+                Modelo de tienda en Nest.js con módulos de autenticación, autorización y gestión de roles,
+                generación y asignación de tokens de acceso, manejo de transacciones, seeds y controladores
+                de errores personalizados. Base de datos PostgreSQL desplegada con Docker.
               </p>
-              <a class="btn-code" href="https://github.com/danimrios/shop-nest"
-                 target="_blank" rel="noopener noreferrer">
-                <img src="jpg/Gith.jpeg" alt="GitHub"/> Ver código
-              </a>
+              <div class="proyecto-actions">
+                <a class="btn-code" href="https://github.com/danimrios/shop-nest"
+                   target="_blank" rel="noopener noreferrer">
+                  <img src="jpg/Gith.jpeg" alt="GitHub"/> Ver código
+                </a>
+              </div>
             </div>
             <div class="proyecto-imgs">
               <img class="img-proyecto" src="jpg/shop_Nest.jpg" alt="Shop-Nest proyecto"/>
@@ -138,15 +304,23 @@
           <div class="proyecto-card proyecto-card--reverse reveal-right">
             <div class="proyecto-body">
               <h3 class="proyecto-nombre">Clínica</h3>
+              <div class="stack-tags">
+                <span class="stack-tag">ASP.NET</span>
+                <span class="stack-tag">C#</span>
+                <span class="stack-tag">SQL Server</span>
+                <span class="stack-tag">HTML/CSS</span>
+              </div>
               <p class="proyecto-desc">
                 Aplicación web de gestión para una clínica con roles de administrador y médico,
                 orientada a la gestión de turnos y atenciones.
-                Desarrollado en tres capas con ASP.NET, HTML, CSS, C# y SQL Server.
+                Desarrollado en tres capas con ASP.NET, C# y SQL Server.
               </p>
-              <a class="btn-code" href="https://github.com/danimrios/TPINT_GRUPO_1_PR3"
-                 target="_blank" rel="noopener noreferrer">
-                <img src="jpg/Gith.jpeg" alt="GitHub"/> Ver código
-              </a>
+              <div class="proyecto-actions">
+                <a class="btn-code" href="https://github.com/danimrios/TPINT_GRUPO_1_PR3"
+                   target="_blank" rel="noopener noreferrer">
+                  <img src="jpg/Gith.jpeg" alt="GitHub"/> Ver código
+                </a>
+              </div>
             </div>
             <div class="proyecto-imgs">
               <img class="img-proyecto" src="jpg/clinicaUTN.jpg" alt="Clínica proyecto"/>
@@ -157,16 +331,23 @@
           <div class="proyecto-card reveal-left">
             <div class="proyecto-body">
               <h3 class="proyecto-nombre">Home Banking</h3>
+              <div class="stack-tags">
+                <span class="stack-tag">Java</span>
+                <span class="stack-tag">JavaScript</span>
+                <span class="stack-tag">MySQL</span>
+                <span class="stack-tag">HTML/CSS</span>
+              </div>
               <p class="proyecto-desc">
                 Aplicación web Home Banking (ficticio) con roles de administrador y cliente.
-                El cliente puede realizar transacciones, solicitar préstamos y ver sus cuentas.
-                El administrador gestiona altas, aprueba préstamos y accede a reportes de actividad.
-                Tres capas con HTML, CSS, Java, JavaScript y MySQL.
+                El cliente realiza transacciones y solicita préstamos; el administrador gestiona altas,
+                aprueba operaciones y accede a reportes. Tres capas con Java, JavaScript y MySQL.
               </p>
-              <a class="btn-code" href="https://github.com/danimrios/TPINT_GRUPO_15_LAB4"
-                 target="_blank" rel="noopener noreferrer">
-                <img src="jpg/Gith.jpeg" alt="GitHub"/> Ver código
-              </a>
+              <div class="proyecto-actions">
+                <a class="btn-code" href="https://github.com/danimrios/TPINT_GRUPO_15_LAB4"
+                   target="_blank" rel="noopener noreferrer">
+                  <img src="jpg/Gith.jpeg" alt="GitHub"/> Ver código
+                </a>
+              </div>
             </div>
             <div class="proyecto-imgs">
               <img class="img-proyecto" src="jpg/bancoUtn.jpeg" alt="Home Banking proyecto"/>
@@ -177,17 +358,23 @@
           <div class="proyecto-card proyecto-card--reverse reveal-right">
             <div class="proyecto-body">
               <h3 class="proyecto-nombre">Servicio SQL Cine</h3>
+              <div class="stack-tags">
+                <span class="stack-tag">SQL Server</span>
+                <span class="stack-tag">Stored Procedures</span>
+                <span class="stack-tag">Triggers</span>
+              </div>
               <p class="proyecto-desc">
                 Base de datos relacional para un cine: programación de películas, administración de salas
                 y seguimiento de ingresos, respetando principios ACID.
-                <br/><strong>Stored Procedure</strong> SP_Eliminar_Pelicula: baja lógica y actualización de Cartelera.
-                <br/><strong>Trigger</strong> TR_UpdateStock: actualiza stock en Catalogo_Food tras cada venta;
-                revierte la transacción si el stock es insuficiente.
+                <br/><strong>SP_Eliminar_Pelicula:</strong> baja lógica y actualización de Cartelera.
+                <br/><strong>TR_UpdateStock:</strong> actualiza stock tras cada venta; revierte si es insuficiente.
               </p>
-              <a class="btn-code" href="https://github.com/danimrios/Cine-Sql"
-                 target="_blank" rel="noopener noreferrer">
-                <img src="jpg/Gith.jpeg" alt="GitHub"/> Ver código
-              </a>
+              <div class="proyecto-actions">
+                <a class="btn-code" href="https://github.com/danimrios/Cine-Sql"
+                   target="_blank" rel="noopener noreferrer">
+                  <img src="jpg/Gith.jpeg" alt="GitHub"/> Ver código
+                </a>
+              </div>
             </div>
             <div class="proyecto-imgs">
               <img class="img-proyecto" src="jpg/Der_DD.jpg" alt="Cine DER"/>
@@ -200,7 +387,7 @@
     </section>
 
     <!-- CONTACTO -->
-    <section class="sec sec--alt" id="contactame">
+    <section class="sec" id="contactame">
       <div class="container">
         <h2 class="sec-title">CONTÁCTAME</h2>
         <div class="contact-grid reveal">
@@ -260,7 +447,6 @@
       }
     }
 
-    // Scroll reveal
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
@@ -271,7 +457,6 @@
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
 
-    // Mobile nav
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu   = document.querySelector('.nav-menu');
     navToggle.addEventListener('click', () => {
