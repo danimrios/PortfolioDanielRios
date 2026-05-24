@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio de Daniel Martín Ríos, Técnico Universitario en Programación"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Daniel Ríos - Portfolio</title>
+</head>
+<body>
+
+  <header>
+    <button class="nav-toggle" aria-label="Menú de navegación" aria-expanded="false">&#9776;</button>
+    <nav class="nav-menu">
+      <a class="nav-link" href="#sobremi">Sobre mí</a>
+      <a class="nav-link" href="#STACK">Stack</a>
+      <a class="nav-link" href="#Proyectosh1">Proyectos</a>
+      <a class="nav-link nav-link--cta" href="#contactame">Contáctame</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-label">Buenas, soy</p>
+        <h1>Daniel Martin Rios</h1>
+        <p class="hero-sub">Técnico Universitario en Programación</p>
+        <div class="hero-socials">
+          <a class="hero-social-btn" href="https://www.linkedin.com/in/daniel-martin-rios"
+             target="_blank" rel="noopener noreferrer">
+            <img src="jpg/linkedin.png" alt="LinkedIn"/>
+          </a>
+          <a class="hero-social-btn" href="https://github.com/danimrios"
+             target="_blank" rel="noopener noreferrer">
+            <img src="jpg/Gith.jpeg" alt="GitHub"/>
+          </a>
+          <a class="hero-social-btn" href="https://drive.google.com/file/d/1MKNF-if8WcE_jWJKvb3PiTK-bBZnjle6/view?usp=sharing"
+             target="_blank" rel="noopener noreferrer">
+            <img src="jpg/descargaCV.jpeg" alt="Descargar CV"/>
+          </a>
+        </div>
+        <a class="hero-scroll" href="#sobremi" aria-label="Ir a Sobre mí">&#8595;</a>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="sec" id="sobremi">
+      <div class="container">
+        <h2 class="sec-title">SOBRE MÍ</h2>
+        <div class="about-grid reveal">
+          <div class="about-img-wrap">
+            <img id="IMGPresentacion" src="jpg/FDanielRios.jpg" alt="Foto de Daniel Ríos"/>
+          </div>
+          <div class="about-text">
+            <p>
+              Soy Daniel Martín Ríos, desarrollador full-stack graduado de la Universidad Técnica Nacional.
+              Soy alguien que aprende rápido, se adapta a contextos nuevos y disfruta enfrentar desafíos técnicos
+              complejos con creatividad.
+            </p>
+            <p>
+              Mi fortaleza está en resolver problemas reales trabajando de cerca con stakeholders para entender
+              qué necesitan, no solo qué dicen que necesitan. Valoro mucho la retroalimentación y el trabajo
+              colaborativo. Considero que el mejor código es el que se mantiene, escala y que otros pueden entender.
+            </p>
+            <p>
+              Me mueve el aprendizaje constante. No me conforma repetir lo que ya sé; busco activamente profundizar
+              en nuevas tecnologías y paradigmas, pero siempre con pragmatismo: elijo herramientas que resuelvan el
+              problema, no porque estén de moda.
+            </p>
+            <p>
+              Soy comunicativo, responsable con los compromisos, y tengo capacidad para adaptarme a diferentes
+              dinámicas de equipo. Busco un espacio donde pueda crecer técnicamente mientras agrego valor real
+              al proyecto y al equipo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="sec sec--alt" id="STACK">
+      <div class="container">
+        <h2 class="sec-title">STACK</h2>
+        <div class="stack-grid reveal">
+          <div class="stack-card">
+            <span class="stack-label">Frontend</span>
+            <img src="jpg/frontend.jpg" alt="Frontend"/>
+            <p class="stack-tech">HTML, CSS</p>
+          </div>
+          <div class="stack-card">
+            <span class="stack-label">Backend</span>
+            <img src="jpg/backend.jpg" alt="Backend"/>
+            <p class="stack-tech">C#, C++, Java, SSMS, MySQL, node.js, Nest.js</p>
+          </div>
+          <div class="stack-card">
+            <span class="stack-label">Herramientas</span>
+            <img src="jpg/herramienta.jpg" alt="Herramientas"/>
+            <p class="stack-tech">VS Code, CodeBlocks, Eclipse, Docker, Insomnia, GitHub</p>
+          </div>
+          <div class="stack-card">
+            <span class="stack-label">Estudiando</span>
+            <img src="jpg/estudiando.jpg" alt="Estudiando"/>
+            <p class="stack-tech">Microservicios</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="sec" id="Proyectosh1">
+      <div class="container">
+        <h2 class="sec-title">PROYECTOS</h2>
+        <div class="proyectos-list">
+
+          <div class="proyecto-card reveal-left">
+            <div class="proyecto-body">
+              <h3 class="proyecto-nombre">Shop-Nest</h3>
+              <p class="proyecto-desc">
+                Desarrollé un modelo de tienda en Nest.js, implementando módulos de autenticación,
+                autorización y gestión de roles, con generación y asignación de tokens de acceso.
+                Incluye manejo de transacciones, seeds, decoradores nativos del framework y controladores
+                de errores personalizados. Los productos soportan creación, consulta y edición.
+                Base de datos PostgreSQL desplegada con Docker.
+              </p>
+              <a class="btn-code" href="https://github.com/danimrios/shop-nest"
+                 target="_blank" rel="noopener noreferrer">
+                <img src="jpg/Gith.jpeg" alt="GitHub"/> Ver código
+              </a>
+            </div>
+            <div class="proyecto-imgs">
+              <img class="img-proyecto" src="jpg/shop_Nest.jpg" alt="Shop-Nest proyecto"/>
+              <img class="img-proyecto" src="jpg/shop_Nest2.jpg" alt="Shop-Nest proyecto 2"/>
+            </div>
+          </div>
+
+          <div class="proyecto-card proyecto-card--reverse reveal-right">
+            <div class="proyecto-body">
+              <h3 class="proyecto-nombre">Clínica</h3>
+              <p class="proyecto-desc">
+                Aplicación web de gestión para una clínica con roles de administrador y médico,
+                orientada a la gestión de turnos y atenciones.
+                Desarrollado en tres capas con ASP.NET, HTML, CSS, C# y SQL Server.
+              </p>
+              <a class="btn-code" href="https://github.com/danimrios/TPINT_GRUPO_1_PR3"
+                 target="_blank" rel="noopener noreferrer">
+                <img src="jpg/Gith.jpeg" alt="GitHub"/> Ver código
+              </a>
+            </div>
+            <div class="proyecto-imgs">
+              <img class="img-proyecto" src="jpg/clinicaUTN.jpg" alt="Clínica proyecto"/>
+              <img class="img-proyecto" src="jpg/clinicaUTN2.jpg" alt="Clínica proyecto 2"/>
+            </div>
+          </div>
+
+          <div class="proyecto-card reveal-left">
+            <div class="proyecto-body">
+              <h3 class="proyecto-nombre">Home Banking</h3>
+              <p class="proyecto-desc">
+                Aplicación web Home Banking (ficticio) con roles de administrador y cliente.
+                El cliente puede realizar transacciones, solicitar préstamos y ver sus cuentas.
+                El administrador gestiona altas, aprueba préstamos y accede a reportes de actividad.
+                Tres capas con HTML, CSS, Java, JavaScript y MySQL.
+              </p>
+              <a class="btn-code" href="https://github.com/danimrios/TPINT_GRUPO_15_LAB4"
+                 target="_blank" rel="noopener noreferrer">
+                <img src="jpg/Gith.jpeg" alt="GitHub"/> Ver código
+              </a>
+            </div>
+            <div class="proyecto-imgs">
+              <img class="img-proyecto" src="jpg/bancoUtn.jpeg" alt="Home Banking proyecto"/>
+              <img class="img-proyecto" src="jpg/bancoUtn2.jpeg" alt="Home Banking proyecto 2"/>
+            </div>
+          </div>
+
+          <div class="proyecto-card proyecto-card--reverse reveal-right">
+            <div class="proyecto-body">
+              <h3 class="proyecto-nombre">Servicio SQL Cine</h3>
+              <p class="proyecto-desc">
+                Base de datos relacional para un cine: programación de películas, administración de salas
+                y seguimiento de ingresos, respetando principios ACID.
+                <br/><strong>Stored Procedure</strong> SP_Eliminar_Pelicula: baja lógica y actualización de Cartelera.
+                <br/><strong>Trigger</strong> TR_UpdateStock: actualiza stock en Catalogo_Food tras cada venta;
+                revierte la transacción si el stock es insuficiente.
+              </p>
+              <a class="btn-code" href="https://github.com/danimrios/Cine-Sql"
+                 target="_blank" rel="noopener noreferrer">
+                <img src="jpg/Gith.jpeg" alt="GitHub"/> Ver código
+              </a>
+            </div>
+            <div class="proyecto-imgs">
+              <img class="img-proyecto" src="jpg/Der_DD.jpg" alt="Cine DER"/>
+              <img class="img-proyecto" src="jpg/DIagrama_DB.jpg" alt="Cine Diagrama DB"/>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="sec sec--alt" id="contactame">
+      <div class="container">
+        <h2 class="sec-title">CONTÁCTAME</h2>
+        <div class="contact-grid reveal">
+
+          <div class="contact-card" onclick="copyToClipboard('danielmartinmrios@gmail.com')">
+            <img src="jpg/gmail.jpg" alt="Gmail"/>
+            <span class="contact-label">Email</span>
+            <span class="contact-val">danielmartinmrios@gmail.com</span>
+          </div>
+
+          <a class="contact-card" href="https://www.linkedin.com/in/daniel-martin-rios"
+             target="_blank" rel="noopener noreferrer">
+            <img src="jpg/linkedin.png" alt="LinkedIn"/>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-val">Daniel Martin Rios</span>
+          </a>
+
+          <a class="contact-card" href="https://wa.me/+541158397896"
+             target="_blank" rel="noopener noreferrer">
+            <img src="jpg/wassp.png" alt="WhatsApp"/>
+            <span class="contact-label">WhatsApp</span>
+            <span class="contact-val">+54 9 1158397896</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Copyright &copy; <span id="current-year"></span> Daniel Rios</p>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    function copyToClipboard(text) {
+      const show = () => {
+        const t = document.getElementById('toast');
+        t.textContent = '¡Email copiado al portapapeles!';
+        t.classList.add('toast--visible');
+        setTimeout(() => t.classList.remove('toast--visible'), 2500);
+      };
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(show);
+      } else {
+        const tmp = document.createElement('textarea');
+        tmp.value = text;
+        document.body.appendChild(tmp);
+        tmp.select();
+        document.execCommand('copy');
+        document.body.removeChild(tmp);
+        show();
+      }
+    }
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+    // Mobile nav
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu   = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', () => {
+      const open = navMenu.classList.toggle('nav-menu--open');
+      navToggle.setAttribute('aria-expanded', open);
+    });
+    navMenu.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('nav-menu--open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>
